@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'uniSans';
+    src: url('../fonts/uni-sans.heavy-caps-webfont.woff2') format('woff2'),
+         url('../fonts/uni-sans.heavy-caps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.first span{
+    animation: animate 1s infinite;
+}
+
+@keyframes animate{
+    0%{
+        color: #393E46;
+    }
+
+    /* 50%{
+        color: #436397;
+    } */
+
+    100%{
+        color: #00ADB5;
+    }
+}
+
+body{
+    font-family: 'uniSans';
+    text-align: center;
+}
+
+/* h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+} */
+.container{
+    margin-top: 7rem;
+}
+
+.container-grid{
+    display: flex;
+    grid-template-columns: repeat( 5 , 1fr);
+    gap:1rem;
+
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+
+    margin-top: 2rem;
+}
+
+.container-grid div{
+    background: #1C3879;
+    color: #EEEEEE;
+    text-align: center;
+    width: 6rem;
+
+}
+
+.in div{
+    background-color: #393E46;
+}
+.out div{
+    background-color: #00ADB5;
+}
+/* .container-grid span{
+    padding: 2rem;
+} */
+
+
